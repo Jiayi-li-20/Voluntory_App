@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/blume"
+    android:fitsSystemWindows="true"  >
+    
+    <RelativeLayout
+        android:id="@+id/vinfo_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center" >
+        
+        <FrameLayout
+            android:id="@+id/white_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/ic"
+                android:textSize="22sp" />
+
+        </FrameLayout>
+        
+        <FrameLayout
+            android:id="@+id/title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/white_layout"
+            android:gravity="center" >
+
+        </FrameLayout>
+        
+        <FrameLayout
+            android:id="@+id/location_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_layout"
+            android:gravity="center" >
+            
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="@string/dlwz" />
+
+            <Button
+                android:id="@+id/volloc"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="#C67171"
+                android:text="@string/dqwz"
+                android:textSize="16sp" />
+            
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/latitude_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_layout"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/vlatitude"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="numberDecimal"
+                android:maxLength="20"
+                android:paddingLeft="55dp"
+                android:paddingRight="60dp" />
+            
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:text="@string/latitude"/>
+
+        </FrameLayout>
+        
+        <FrameLayout
+            android:id="@+id/longitude_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/latitude_layout"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/vlongitude"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="numberDecimal"
+                android:maxLength="20"
+                android:paddingLeft="55dp"
+                android:paddingRight="60dp" />
+            
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:text="@string/longitude"/>
+
+        </FrameLayout>
+        
+        <FrameLayout
+            android:id="@+id/qqnum_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/longitude_layout"
+            android:gravity="center" >
+
+            
+            <EditText
+                android:id="@+id/vqqnum"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="65dp"
+                android:paddingRight="55dp"
+                android:maxLength="20"
+                android:layout_marginTop="5dp"
+                android:inputType="number" />
+            
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:text="QQ号码：" />
+
+        </FrameLayout>
+        
+        <FrameLayout
+            android:id="@+id/contacts_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qqnum_layout"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/vcontacts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="number"
+                android:maxLength="20"
+                android:paddingLeft="65dp"
+                android:paddingRight="55dp" />
+            
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:text="@string/lxfs" />
+
+        </FrameLayout>
+        
+        <FrameLayout
+            android:id="@+id/requestnum_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contacts_layout"
+            android:gravity="center" >
+
+        </FrameLayout>
+        
+        <Button
+        android:id="@+id/vupload"
+        android:layout_width="fill_parent"
+		android:layout_height="@dimen/abc_action_bar_default_height"
+        android:layout_below="@+id/requestnum_layout"
+        android:background="#5d7df5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:textColor="@android:color/white"
+        android:text="@string/tj" />
+        
+         <Button
+        android:id="@+id/vback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vupload"
+        android:background="#00000000"
+        android:gravity="left|center_vertical"
+        android:text="返回" 
+        android:textSize="16sp"            
+        android:visibility="visible"/>
+         
+    </RelativeLayout>
+
+   
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/star">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="95dp"
+        android:layout_y="215dp"
+        android:text="@string/login" 
+        android:textSize="15sp"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="200dp"
+        android:layout_y="215dp"
+        android:text="@string/rigister" 
+        android:textSize="15sp"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="171dp"
+        android:layout_height="90dp"
+        android:layout_x="96dp"
+        android:layout_y="60dp"
+        android:text="To be a volunteer..."
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_x="159dp"
+        android:layout_y="215dp"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:text="OR" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="106dp"
+        android:layout_height="106dp"
+        android:layout_x="130dp"
+        android:layout_y="341dp"
+        android:src="@drawable/tree" />
+
+</AbsoluteLayout>

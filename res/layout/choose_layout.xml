@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/location"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/makefg"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/text_location"
+            android:layout_width="255dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="当前位置"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/find"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/find"
+            android:text="" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cupload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffcc33"
+        android:text="上传定位"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" >
+    </com.baidu.mapapi.map.MapView>
+	
+    <RelativeLayout
+        android:id="@+id/marker_info"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentBottom="true"
+        android:background="#CC4e5a6b"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/info_img"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:alpha="1.0"
+            android:background="@drawable/abc_cab_background_bottom_holo_light"
+            android:clickable="true"
+            android:scaleType="fitXY" 
+            android:src="@drawable/fruit"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/abc_cab_background_bottom_holo_dark" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/info_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff5eb" 
+                    android:text="站点名称"/>
+
+                <TextView
+                    android:id="@+id/info_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff5eb" 
+                    android:text="123456"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal" >
+
+				<TextView
+                    android:id="@+id/info_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="12345"
+                    android:textColor="#FFF5EB" />
+                <TextView
+                    android:id="@+id/info_zan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="652"
+                    android:textColor="#FFF5EB" />
+                
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    
+</LinearLayout>
